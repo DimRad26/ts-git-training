@@ -7,7 +7,7 @@ export const computeFibonacciNumber = (position: number | null): number => {
     if (position === 0) {
         return 0;
     }
-    if (position < 0) { 
+    if (position < 0) {
         return computeNegativeFibonacci(position);
     }
 
@@ -19,7 +19,7 @@ export const computeFibonacciNumber = (position: number | null): number => {
     let j = 1;
 
     let currentPosition = 2;
-    while (currentPosition < notNullPosition) {
+    while (currentPosition < position) {
         const temp = i;
         i = j;
         j += temp;
